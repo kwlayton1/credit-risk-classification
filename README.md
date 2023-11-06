@@ -1,6 +1,6 @@
 # Credit Risk Classification Report [Module 20]
 
-## Overview of the Analysis Note that the next section will show the results:
+## Overview of the Analysis (note that the next section will show the actual results):
 
 #### The purpose of the analysis is to develop a logistic regression model (supervised machine learning) that predicts Credit Risk. The loan_status variable prediction is used to predict the Credit Risk. 
 
