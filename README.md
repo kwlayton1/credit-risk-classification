@@ -29,21 +29,28 @@ The models's performance was evaluated using the accuracy score, a confusion mat
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
-### Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores. 
+### Machine Learning Model 1: 
+###   1-  99% Accuracy score. Measures the percentage of correctly classified instances out of the total instances in the dataset.
+###   2- For 0:  100% Precision score. The ratio of true positives to the total number of predicted positives
+###      For 1:   85% Precision score.
+###   3- For 0:  99% Recall score.   The ratio of true positives to the total number of actual positives.
+###      For 1:   85% Precision score.
 
-####Classification Report
+####Classification Report for Model 1:
 ####              precision    recall  f1-score   support
 ####           0       1.00      0.99      1.00     18765
 ####           1       0.85      0.91      0.88       619
-
 ####    accuracy                           0.99     19384
 ####   macro avg       0.92      0.95      0.94     19384
-####weighted avg       0.99      0.99      0.99     19384
+####  weighted avg       0.99      0.99      0.99     19384
 
 ### Machine Learning Model 2:
-####  * Description of Model 2 Accuracy, Precision, and Recall scores.
-
+###   1-  99% Accuracy score. Measures the percentage of correctly classified instances out of the total instances in the dataset.
+###   2- For 0:  99% Precision score. The ratio of true positives to the total number of predicted positives
+###      For 1:  99% Precision score.
+###   3- For 0:  99% Recall score.   The ratio of true positives to the total number of actual positives.
+###      For 1:   99% Precision score.
+###  
 ####Classification Report Resampled Data
 ####              precision    recall  f1-score   support
 ####           0       0.99      0.99      0.99     75036
@@ -56,16 +63,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 ## Summary
 
-Question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
+### Model 1, the logistic regression model using original data shows good predictions for both the healthy loans classification (100%) and for the high-risk loans (88%).
 
-Answer: The logistic regression model shows very good predictions for both the healthy loans classification (100%) and for the high-risk loans (88%).
+### Model 2, I abxolutely recommend the logistic regression model, fit with oversampled data. The macro-averaged precision, recall, and F1-score are all 0.99, indicating that the model's performance is excellent, and it has achieved high precision, recall, and F1-score for both classes. This means that the model is making accurate predictions for both positive and negative instances.
 
-Question: How well does the logistic regression model, fit with oversampled data, predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
-
-Answer: Using oversampled data increased the f1-score of high-risk loan by 11% (88 to 99). The healthy loan percentage only decreased by 1% (now 99 instead of 100). Using the oversampled method is much more efficient in predicting loan repayment. Also note that the accuracy is the same for both methods (99%).
-
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
