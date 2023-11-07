@@ -65,5 +65,5 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 ### Model 1, the logistic regression model using original data shows good predictions for both the healthy loans classification (100%) and for the high-risk loans (88%).
 
-### Model 2, I abxolutely recommend the logistic regression model, fit with oversampled data. The macro-averaged precision, recall, and F1-score are all 0.99, indicating that the model's performance is excellent, and it has achieved high precision, recall, and F1-score for both classes. This means that the model is making accurate predictions for both positive and negative instances.
+### Model 2, I absolutely recommend this logistic regression model, fit with oversampled data. The macro-averaged precision, recall, and F1-score are all 0.99, indicating that the model's performance is excellent, and it has achieved high precision, recall, and F1-score for both classes. This means that the model is making accurate predictions for both positive and negative instances.
 
